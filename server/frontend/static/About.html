@@ -1,7 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <title>About Us - Dealerships</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .about-container {
+      width: 85%;
+      margin: 5% auto;
+    }
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .card {
+      flex: 1;
+      min-width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-body {
+      text-align: center;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 768px) {
+      .team-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
+<body>
+
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -24,45 +65,49 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
+
+  <div class="card about-container">
+    <div class="banner" name="about-header">
       <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <h1>About Us</h1>
+      Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
+    </div>
+
+    <div class="team-section">
+
+      <div class="card">
+        <img class="card-img-top" src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Person1">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">Alex Johnson</p>
+          <p>Founder & CEO</p>
+          <p class="card-text">Alex brings over 15 years of experience in the automotive industry. He founded Best Cars to deliver exceptional service and quality vehicles to customers across North America.</p>
+          <p><a href="mailto:alex.johnson@example.com">alex.johnson@example.com</a></p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card">
+        <img class="card-img-top" src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Person2">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">Maria Lee</p>
+          <p>Chief Marketing Officer</p>
+          <p class="card-text">Maria oversees all marketing initiatives, ensuring our customers stay informed about the latest models, offers, and dealership events.</p>
+          <p><a href="mailto:maria.lee@example.com">maria.lee@example.com</a></p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card">
+        <img class="card-img-top" src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Person3">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">David Chen</p>
+          <p>Lead Mechanic</p>
+          <p class="card-text">With a strong background in automotive engineering, David ensures every vehicle sold is inspected and serviced to meet our high standards.</p>
+          <p><a href="mailto:david.chen@example.com">david.chen@example.com</a></p>
         </div>
       </div>
+
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
 
+</body>
 </html>
